@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to right bottom, #222222, #81887e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  height: 60vh;
+  max-width: 370px;
+  min-width: 370px;
+}
+
+.display {
+  width: 100%;
+  max-height: min-content;
+  min-height: 20%;
+  background-color: rgba(255, 255, 255, 0.13);
+  color: white;
+  word-break: break-all;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 7px;
+  font-weight: bold;
+}
+
+.current-number {
+  font-size: 37px;
+}
+
+.previous-number {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.705);
+}
+
+.math-sign {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.705);
+}
+
+.keyboard {
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 2.5px;
+}
+
+.keyboard button {
+  min-height: 80px;
+  font-size: 27px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  outline: none;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.569);
+  color: rgb(169, 169, 169);
+}
